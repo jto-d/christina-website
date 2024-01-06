@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import { motion } from 'framer-motion'
 import styled, { css } from 'styled-components'
-import { GlobalStyle } from '../styles'
 import { HiMenuAlt4, HiX } from 'react-icons/hi'
 import { LinkedInIcon, LogoImg } from '../assets/homepage'
 
@@ -79,7 +78,7 @@ const Menu = styled.div`
     bottom: 0;
     right: 0;
     z-index: 0;
-    background-color: var(--bg-color);
+    background-color: var(--background-color);
 
     padding: 1rem;
     width: 100vw;

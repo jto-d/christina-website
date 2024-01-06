@@ -12,7 +12,7 @@ const GlobalStyle = createGlobalStyle`
         margin: 0;
         scroll-behavior: smooth;
         font-family: var(--font-inter);
-        background-color: var(--bg-color);
+        background-color: var(--background-color);
         
     }
 
