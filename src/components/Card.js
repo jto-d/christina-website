@@ -3,13 +3,25 @@ import styled from 'styled-components'
 
 const Container = styled.div`
   width: 35vw;
+  height: 27.26vw;
   position: relative;
+
+  @media (max-width: 700px) {
+      width: 70vw;
+      height: 54.52vw;
+  }
 
   div {
     color: var(--text-color);
     background-color: var(--background-color);
     width: 35vw;
     height: 27.26vw;
+    @media (max-width: 700px) {
+      width: 70vw;
+      height: 54.52vw;
+    }
+
+
     position: absolute;
     opacity: 0;
     transition: opacity 0.4s ease-in-out;
@@ -46,6 +58,10 @@ const Container = styled.div`
   
 
   img {
+
+    @media (max-width: 700px) {
+      width: 70vw;
+    }
     width: 35vw;
   }
 `

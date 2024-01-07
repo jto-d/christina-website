@@ -25,6 +25,10 @@ const TopText = styled.div`
     background-color: var(--text-color);
     font-weight: 700;
     font-size: 1.3rem;
+
+    @media (max-width: 750px) {
+      font-size: 1.1rem;
+    }
   }
 
 `
@@ -35,6 +39,11 @@ const BottomText = styled.div`
   margin-right: 13.8%;
   display: flex;
   flex-direction: row;
+
+  @media (max-width: 750px) {
+    flex-direction: column;
+    gap: 10px;
+  }
   justify-content: space-between;
   background-color: var(--text-color);
 

@@ -13,6 +13,10 @@ const Nav = styled.nav`
   padding: 84px 13.8%;
   letter-spacing: .1em;
 
+  @media (max-width: 500px) {
+    padding: 42px 8.8%;
+  }
+
 `
 
 const Logo = styled.img`
@@ -79,8 +83,6 @@ const Menu = styled.div`
     right: 0;
     z-index: 0;
     background-color: var(--background-color);
-
-    padding: 1rem;
     width: 100vw;
     height: 100vh;
 
