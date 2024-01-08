@@ -2,9 +2,8 @@
 
 TODO:
 Home -- Change Linkedin icon to SVG and apply hover effect
-        fix transition issue, fixed i think??
-        make margins responsive
+        fix menu transition issue, fixed i think??
         fix responsivity issues
-        plug in text and images for rest of the cards
+        plug in text and images for rest of the cards (mostly done)
 
 The rest of the pages
