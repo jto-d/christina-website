@@ -2,9 +2,11 @@ import { css } from 'styled-components'
 
 import InterBold from '../fonts/Inter-Bold.ttf'
 import InterRegular from '../fonts/Inter-Regular.ttf'
+import InterSemiBold from '../fonts/Inter-SemiBold.ttf'
 
 const interNormalWeights = {
     400: InterRegular,
+    600: InterSemiBold,
     700: InterBold,
 }
 
