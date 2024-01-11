@@ -4,6 +4,7 @@ import { Card } from '../components'
 import { Kitty, ImpactAgenda, TigerPursuits, CampusConnect, DevelopForGood } from '../assets/homepage'
 
 const Container = styled.div`
+
   display: flex;
   justify-content: space-between;
   flex-direction: row-reverse;
@@ -145,9 +146,15 @@ const Home = () => {
       
     </Container>
     <Cards>
-        <Card img={TigerPursuits} header="TigerPursuits · Class Project" body="A web app enhancing transparency in student extracurriculars exploration for ENT200." />
-        <Card img={CampusConnect} header="CampusConnect · App Concept" body="A mobile app concept streamlining student group management with location services for a Princeton-based student startup."/>
-        <Card img={ImpactAgenda} header="The Impact Agenda · Website Concept" body="A website concept showcasing the content of a student-founded social impact career podcast."/>
+        <a href="/tigerpursuits">
+          <Card img={TigerPursuits} header="TigerPursuits · Class Project" body="A web app enhancing transparency in student extracurriculars exploration for ENT200." />
+        </a>
+        <a href="/campusconnect">
+          <Card img={CampusConnect} header="CampusConnect · App Concept" body="A mobile app concept streamlining student group management with location services for a Princeton-based student startup."/>
+        </a>
+        <a href="/impactagenda">
+          <Card img={ImpactAgenda} header="The Impact Agenda · Website Concept" body="A website concept showcasing the content of a student-founded social impact career podcast."/>
+        </a>
         <Card img={DevelopForGood} header="Miricyl · Mental Health Web App (Coming Soon)" body="A web app for accessing mental health resource and personalized care." />
     </Cards>
     </>

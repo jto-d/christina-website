@@ -1,1 +1,5 @@
 export { default as Home } from './Home'
+export { default as About } from './About'
+export { default as CampusConnectCS} from './CampusConnectCS'
+export { default as ImpactCS} from './ImpactCS'
+export { default as TigerPursuitsCS} from './TigerPursuitsCS'

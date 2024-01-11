@@ -6,6 +6,10 @@ import { LinkedInIcon, LogoImg } from '../assets/homepage'
 
 
 const Nav = styled.nav`
+  position: relative;
+
+  background-color: transparent;
+  z-index: 10;
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -17,19 +21,26 @@ const Nav = styled.nav`
     padding: 42px 8.8%;
   }
 
+  a {
+    background-color: transparent;
+  }
+
 `
 
 const Logo = styled.img`
+  color: transparent;
   display: flex;
   justify-content: flex-start;
   align-items: center;
   height: 39px;
   width: 64px;
   background: no-repeat;
+  background-color: transparent;
 
 `
 
 const Links = styled.ul`
+  background-color: transparent;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -37,11 +48,13 @@ const Links = styled.ul`
 
   li {
     margin: 0 1.7rem;
+    background-color: transparent;
     cursor: pointer;
     flex-direction: column;
 
     a {
       color: var(--text-color);
+      background-color: transparent;
       text-decoration: none;
       flex-direction: column;
       font-weight: 400;
@@ -52,6 +65,7 @@ const Links = styled.ul`
       }
 
       img {
+        background-color: transparent;
         height: 40px;
         width: 40px;
       }

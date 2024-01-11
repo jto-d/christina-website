@@ -54,6 +54,7 @@ const Container = styled.div`
     cursor: pointer;
     opacity: 0.85;
     transition: opacity 0.4s ease-in-out;
+    
   }
   
 
