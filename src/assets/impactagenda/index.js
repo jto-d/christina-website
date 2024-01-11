@@ -1,0 +1,6 @@
+export { default as Banner } from './The Impact Agenda Banner.png'
+export { default as VideoOne } from './(Video #1) i-Impact Podcast Video.mov'
+export { default as VideoTwo } from './(Video #2) The Impact Agenda Video.mov'
+export { default as EditorXLogo } from './EditorX Logo.png'
+export { default as Design } from './Responsive Design Sample.png'
+export { default as SeasonThree } from './SEASON ONE.png'
