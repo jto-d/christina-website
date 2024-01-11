@@ -3,9 +3,11 @@ import { css } from 'styled-components'
 import InterBold from '../fonts/Inter-Bold.ttf'
 import InterRegular from '../fonts/Inter-Regular.ttf'
 import InterSemiBold from '../fonts/Inter-SemiBold.ttf'
+import InterMedium from '../fonts/Inter-Medium.ttf'
 
 const interNormalWeights = {
     400: InterRegular,
+    500: InterMedium,
     600: InterSemiBold,
     700: InterBold,
 }
@@ -24,10 +26,10 @@ const createFontFace = (family, style = 'normal') => {
         styles += `
             @font-face {
                 font-family: '${family.name}';
-                src: url(${file}) format('ttf');
+                src: url(${file}) format('truetype');
                 font-weight: ${weight};
-                font-style: ${styles};
-                font-display: auto;
+                font-style: ${style};
+                font-display: swap;
             }
         `
     }
