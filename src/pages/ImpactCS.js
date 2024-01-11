@@ -9,10 +9,74 @@ const Wrapper = styled.div`
 
 `
 
+const ReflectionText = styled.div`
+
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 100px;
+
+    h1 {
+        font-weight: 500;
+        font-size: 1.3rem;
+    }
+
+    p {
+        margin-top: 20px;
+        line-height: 1.5rem;
+    }
+
+
+
+`
+
+const Image = styled.div`
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 15vw;
+    width: 15vw;
+
+    img {
+        border-radius: 10px;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+
+
+`
+
+const ImageContainer = styled.div`
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    margin-top: 30px;
+    margin-bottom: 50px;
+
+
+    div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        p {
+            margin-top: 20px;
+            width: 90%;
+            text-align: center;
+        }
+    }
+
+
+
+`
+
 const VideoContainer = styled.div`
     display: flex;
     justify-content: space-between;
     flex-direction: row;
+    margin-bottom: 100px;
 
     div {
         margin-top: 10px;
@@ -53,6 +117,8 @@ const VideoContainer = styled.div`
         }
     }
 `
+
+
 
 const BannerContainer = styled.div`
     width: 100%;
@@ -170,7 +236,8 @@ const ImpactCS = () => {
             <Heading title="Overview"/>
             <p>The Impact Agenda (previously known as the i-Impact Podcast) is a podcast that explores new horizons of social good in the 21st centure. The podcast engages in conversation with innovators and leader to debunk myths about social impact careers.</p>
             <JobDescription role="Volunteer Designer" design="February 2023 - March 2023" third="September 2023 - October 2023" tools="Figma, Adobe Photoshop, EditorX" />
-            <Heading title="Design Challenge"/>
+            <
+                Heading title="Design Challenge"/>
             <p>Following the rebranding from “i-Impact Podcast” to “The Impact Agenda” during its Season 2 release, redesign the original website design with a fresh look, updated content, and more streamlined elements to accommodate future seasons. Additionally, I am responsible for transferring these designs to the chosen CMS, EditorX, to create a responsive website.</p>
             <p><b>The website should:</b></p>
             <BulletedList>
@@ -179,40 +246,72 @@ const ImpactCS = () => {
                 <li>Include "About," "Meet the Team," and "News" pages.</li>
             </BulletedList>
             <br></br>
+            
             <Heading title="First Iteration (Initial Design)"/>
-                <VideoContainer>
-                    <div>
-                        <h1>"i-Impact Prodcast" Website Concept</h1>
-                        <BulletedList>
-                            <li>Implemented colors and typography from the podcast style guide.</li>
-                            <li>Short podcast description included on the landing page along with a social media bar.</li>
-                            <li>"About the Podcast" description and "Meet the Team" section included below the landing page.</li>
-                            <li>Horizontal layout of the episode "cards." Clicking on a card will open to episode on Spotify.</li>
-                        </BulletedList>
-                    </div>
-                    <div>
-                        <ReactPlayer url="https://www.youtube.com/watch?v=mf76Yw9lalk" style={{overflow: "hidden"}}/>
-                        <a>View protoype</a>
-                    </div>
-                </VideoContainer>
+            <VideoContainer>
+                <div>
+                    <h1>"i-Impact Prodcast" Website Concept</h1>
+                    <BulletedList>
+                        <li>Implemented colors and typography from the podcast style guide.</li>
+                        <li>Short podcast description included on the landing page along with a social Video bar.</li>
+                        <li>"About the Podcast" description and "Meet the Team" section included below the landing page.</li>
+                        <li>Horizontal layout of the episode "cards." Clicking on a card will open to episode on Spotify.</li>
+                    </BulletedList>
+                </div>
+                <div>
+                    <ReactPlayer url="https://www.youtube.com/watch?v=mf76Yw9lalk" style={{overflow: "hidden"}}/>
+                    <a>View protoype</a>
+                </div>
+            </VideoContainer>
+            
             <Heading title="Second Iteration (Redesign)"/>
-                <VideoContainer>
-                    <div>
-                        <ReactPlayer url="https://www.youtube.com/watch?v=mf76Yw9lalk" style={{overflow: "hidden"}}/>
-                        <a>View protoype</a>
-                    </div>
-                    <div style={{marginLeft: "5%"}}>
-                        <h1>"The Impact Agenda" Website Concept</h1>
-                        <BulletedList>
-                            <li>Adopted a sleeker look, moving away from initial gradient patterns.</li>
-                            <li>More in-depth contact information in the footer.</li>
-                            <li>Added a "Latest Episodes" section below the landing page for quick preview and redirection to the "Episodes" page.</li>
-                            <li>Added a dropdown for selection between Season 1 and 2. The episode cards link to both spotify and Apple Podcasts, rather than just Spotify.</li>
-                        </BulletedList>
-                    </div>
-                </VideoContainer>
+            <VideoContainer>
+                <div>
+                    <ReactPlayer url="https://www.youtube.com/watch?v=mf76Yw9lalk" style={{overflow: "hidden"}}/>
+                    <a>View protoype</a>
+                </div>
+                <div style={{marginLeft: "5%"}}>
+                    <h1>"The Impact Agenda" Website Concept</h1>
+                    <BulletedList>
+                        <li>Adopted a sleeker look, moving away from initial gradient patterns.</li>
+                        <li>More in-depth contact information in the footer.</li>
+                        <li>Added a "Latest Episodes" section below the landing page for quick preview and redirection to the "Episodes" page.</li>
+                        <li>Added a dropdown for selection between Season 1 and 2. The episode cards link to both spotify and Apple Podcasts, rather than just Spotify.</li>
+                    </BulletedList>
+                </div>
+            </VideoContainer>
+            
             <Heading title="Next Steps"/>
+            <ImageContainer>
+                <div>
+                    <Image>
+                        <img src={EditorXLogo} />
+                    </Image>
+                    <p>Finalize the updated design on EditorX</p>
+                </div>
+                <div>
+                    <Image style={{width: "26vw"}}>
+                        <img src={Design} />
+                    </Image>
+                    <p>Resolve responsive design issues to avoid image overlap and resizing errors.</p>
+                </div>
+                <div>
+                    <Image>
+                        <img src={SeasonThree} />
+                    </Image>
+                    <p>Prepare to implement content for Season 3.</p>
+                </div>
+            </ImageContainer>
+                
             <Heading title="Reflection"/>
+            <ReflectionText>
+                <h1>This project marked the beginning of my journey into digital design and UI/UX!</h1>
+                <p>Starting with no experience in Figma and progressing to a level where I can comfortably plan user flows and prototype has been incredibly rewarding. The Impact Agenda is doing amazing work, and building a website from scratch was super fun. Returning to the project a few months later to redesign it, now with more practice and a deeper understanding of design principles, I was excited to apply my newfound knowledge. This experience not only strengthened my technical skills but also deepened my appreciation for the iterative nature of design work.</p>
+            </ReflectionText>
+
+            BACK ARROW HERE
+            
+
         </Container>
     </Wrapper>
   )
