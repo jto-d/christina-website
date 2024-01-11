@@ -5,6 +5,7 @@ const Container = styled.div`
   width: 35vw;
   height: 27.26vw;
   position: relative;
+  overflow: hidden;
 
   @media (max-width: 700px) {
       width: 70vw;
