@@ -42,21 +42,19 @@ const Logo = styled.img`
 const Links = styled.ul`
   background-color: transparent;
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
   list-style: none;
 
   li {
-    margin: 0 1.7rem;
+    margin-left: 3.4rem;
     background-color: transparent;
     cursor: pointer;
-    flex-direction: column;
 
     a {
       color: var(--text-color);
       background-color: transparent;
       text-decoration: none;
-      flex-direction: column;
       font-weight: 400;
 
       transition: all 0.3s ease-in-out;
