@@ -10,4 +10,9 @@ ImpactAgenda -- Fix video sizing on large screens
                 add back arrow
                 fix banner resizing glitch
 
-The rest of the pages
+About -- fix image zoom (crop into the part you want)
+
+
+
+Later Fixes -- Gatsby because static site?
+               Create universal containers and headers
