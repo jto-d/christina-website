@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.js": "/static/js/main.c043854e.js",
+    "main.js": "/static/js/main.1e3a93dd.js",
     "reactPlayerYouTube.js": "/static/js/reactPlayerYouTube.7b0684c0.chunk.js",
     "reactPlayerSoundCloud.js": "/static/js/reactPlayerSoundCloud.0f0fde8c.chunk.js",
     "reactPlayerVimeo.js": "/static/js/reactPlayerVimeo.fcb212b2.chunk.js",
@@ -82,7 +82,7 @@
     "static/media/CW Header Logo.png": "/static/media/CW Header Logo.e3948004caaaf82bb26d.png",
     "static/media/CampusConnect Information Architecture.png": "/static/media/CampusConnect Information Architecture.0fb4ac9e3e2b4c3097db.png",
     "index.html": "/index.html",
-    "main.c043854e.js.map": "/static/js/main.c043854e.js.map",
+    "main.1e3a93dd.js.map": "/static/js/main.1e3a93dd.js.map",
     "reactPlayerYouTube.7b0684c0.chunk.js.map": "/static/js/reactPlayerYouTube.7b0684c0.chunk.js.map",
     "reactPlayerSoundCloud.0f0fde8c.chunk.js.map": "/static/js/reactPlayerSoundCloud.0f0fde8c.chunk.js.map",
     "reactPlayerVimeo.fcb212b2.chunk.js.map": "/static/js/reactPlayerVimeo.fcb212b2.chunk.js.map",
@@ -98,6 +98,6 @@
     "reactPlayerPreview.3b41088c.chunk.js.map": "/static/js/reactPlayerPreview.3b41088c.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.c043854e.js"
+    "static/js/main.1e3a93dd.js"
   ]
 }
