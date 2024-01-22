@@ -6,7 +6,7 @@ Home -- Change Linkedin icon to SVG and apply hover effect
         fix responsivity issues
 
 ImpactAgenda -- Fix video sizing on large screens
-                fix banner resizing glitch
+                fix banner resizing glitch *****
                 Fix job description sizings?
 
 About -- fix image zoom (crop into the part you want)
