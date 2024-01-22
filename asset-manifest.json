@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.js": "/static/js/main.61b87319.js",
+    "main.js": "/static/js/main.c043854e.js",
     "reactPlayerYouTube.js": "/static/js/reactPlayerYouTube.7b0684c0.chunk.js",
     "reactPlayerSoundCloud.js": "/static/js/reactPlayerSoundCloud.0f0fde8c.chunk.js",
     "reactPlayerVimeo.js": "/static/js/reactPlayerVimeo.fcb212b2.chunk.js",
@@ -16,6 +16,7 @@
     "reactPlayerPreview.js": "/static/js/reactPlayerPreview.3b41088c.chunk.js",
     "static/media/(Video \u0000#2) The Impact Agenda Video.mov": "/static/media/(Video #2) The Impact Agenda Video.4c2c90b91dcfc15426f5.mov",
     "static/media/(Video \u0000#1) i-Impact Podcast Video.mov": "/static/media/(Video #1) i-Impact Podcast Video.0c36d2b37fb004fc3cd2.mov",
+    "static/media/CampusConnect Banner.png": "/static/media/CampusConnect Banner.8f18b12741de7b280cb2.png",
     "static/media/Portfolio Cat Icon.png": "/static/media/Portfolio Cat Icon.81b6a42c225e96f6f3b4.png",
     "static/media/My MacBook.png": "/static/media/My MacBook.38fcc385112c66fc477e.png",
     "static/media/TORI CHICKEN.png": "/static/media/TORI CHICKEN.2559eef567000e973d9d.png",
@@ -25,19 +26,26 @@
     "static/media/The Impact Agenda Banner.png": "/static/media/The Impact Agenda Banner.a82d13bf3b04da4b74ad.png",
     "static/media/ICHIRAN.png": "/static/media/ICHIRAN.713a6c2f2a021b973057.png",
     "static/media/YAMITSUKI.png": "/static/media/YAMITSUKI.a423aeebbc9b0cf5cd83.png",
+    "static/media/CC Explore Page Screens.png": "/static/media/CC Explore Page Screens.0191083c9c40f324cb2f.png",
     "static/media/KYURAMEN.png": "/static/media/KYURAMEN.9e5cda6201dc5df36a2c.png",
     "static/media/TONCHIN.png": "/static/media/TONCHIN.bafe53becc25d4db44f5.png",
     "static/media/Photo.png": "/static/media/Photo.ea9e884baa82593530ba.png",
     "static/media/IPPUDO.png": "/static/media/IPPUDO.b4e99001bceb92d244b9.png",
     "static/media/GANKO.png": "/static/media/GANKO.40b9b4b77c1d96154c44.png",
     "static/media/HANA MICHI.png": "/static/media/HANA MICHI.5df0581845e56f166db5.png",
+    "static/media/CC Messaging Screens.png": "/static/media/CC Messaging Screens.9d4632101f866d59d954.png",
+    "static/media/CC Group Management Screens.png": "/static/media/CC Group Management Screens.acef8c6593655e7d764f.png",
     "static/media/TigerPursuits Preview.png": "/static/media/TigerPursuits Preview.07f2302e9ae47598ef36.png",
     "static/media/Responsive Design Sample.png": "/static/media/Responsive Design Sample.bc523d11d1ef806f14d8.png",
     "static/media/KOKU.png": "/static/media/KOKU.16482b3a859aa4d1f2fa.png",
+    "static/media/CC Event Management Screens.png": "/static/media/CC Event Management Screens.a5d66dd91e342454a70a.png",
     "static/media/Affinity_Groups.jpg": "/static/media/Affinity_Groups.b3af07e0e05300f18f97.jpg",
+    "static/media/CampusConnect Preview.png": "/static/media/CampusConnect Preview.8880688487c36763775c.png",
     "static/media/Ideation.jpg": "/static/media/Ideation.8a9d98667998719f76eb.jpg",
+    "static/media/CC Task Management Screens.png": "/static/media/CC Task Management Screens.0ebf6396cc29d4a67e1d.png",
     "static/media/image7.png": "/static/media/image7.151c2919ef255bc3b0a4.png",
     "static/media/image6.png": "/static/media/image6.dfddc8673f5da2f1d158.png",
+    "static/media/CampusConnect Wireframes.png": "/static/media/CampusConnect Wireframes.5c352732ab4b70d7a7f9.png",
     "static/media/image5.png": "/static/media/image5.31f313349bbc6ca95757.png",
     "static/media/image2.png": "/static/media/image2.390fe61df4472c581c61.png",
     "static/media/image1.png": "/static/media/image1.26f443c5383e94a2470b.png",
@@ -70,9 +78,11 @@
     "static/media/Community Page.png": "/static/media/Community Page.ed1c9cf50254a13df2d4.png",
     "static/media/TigerPursuits Key Values.png": "/static/media/TigerPursuits Key Values.be147080127f1ec98786.png",
     "static/media/EditorX Logo.png": "/static/media/EditorX Logo.c33cde5f89fbf92c57f0.png",
+    "static/media/CampusConnect Style Guide.png": "/static/media/CampusConnect Style Guide.cacc0c768a5f2ab318b2.png",
     "static/media/CW Header Logo.png": "/static/media/CW Header Logo.e3948004caaaf82bb26d.png",
+    "static/media/CampusConnect Information Architecture.png": "/static/media/CampusConnect Information Architecture.0fb4ac9e3e2b4c3097db.png",
     "index.html": "/index.html",
-    "main.61b87319.js.map": "/static/js/main.61b87319.js.map",
+    "main.c043854e.js.map": "/static/js/main.c043854e.js.map",
     "reactPlayerYouTube.7b0684c0.chunk.js.map": "/static/js/reactPlayerYouTube.7b0684c0.chunk.js.map",
     "reactPlayerSoundCloud.0f0fde8c.chunk.js.map": "/static/js/reactPlayerSoundCloud.0f0fde8c.chunk.js.map",
     "reactPlayerVimeo.fcb212b2.chunk.js.map": "/static/js/reactPlayerVimeo.fcb212b2.chunk.js.map",
@@ -88,6 +98,6 @@
     "reactPlayerPreview.3b41088c.chunk.js.map": "/static/js/reactPlayerPreview.3b41088c.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.61b87319.js"
+    "static/js/main.c043854e.js"
   ]
 }
