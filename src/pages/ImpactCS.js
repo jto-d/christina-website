@@ -1,34 +1,13 @@
 import React, { useRef, useEffect, useState } from 'react'
 import styled, { css } from 'styled-components'
 import { VideoOne, VideoTwo, EditorXLogo, Design, SeasonThree, Banner } from '../assets/impactagenda'
-import { Button, Heading, JobDescription } from '../components'
+import { Button, Heading, JobDescription, ReflectionText, BannerContainer, BannerText } from '../components'
 import ReactPlayer from 'react-player'
 
 const Wrapper = styled.div`
     display: block;
 
 `
-
-const ReflectionText = styled.div`
-
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 100px;
-
-    h1 {
-        font-weight: 500;
-        font-size: 1.3rem;
-    }
-
-    p {
-        margin-top: 20px;
-        line-height: 1.5rem;
-    }
-
-
-
-`
-
 const Image = styled.div`
 
     display: flex;
@@ -119,67 +98,11 @@ const VideoContainer = styled.div`
 `
 
 
-
-const BannerContainer = styled.div`
-    width: 100%;
-    height: auto;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 0;
-
-    img {
-        display: block;
-        width: 100%;
-        height: auto;
-        position: absolute;
-    }
-`
-
-const Text = styled.div`
-
-    height: 100%;
-    width: 100%;
-    margin-left: 13.4%;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    position: relative;
-    z-index: 1;
-    background-color: transparent;
-
-
-    h1 {
-        margin-top: 10%;
-        width: 400px;
-        background-color: transparent;
-        font-weight: 700;
-        font-size: 2.6rem;
-
-        font-size: clamp(20px, 3vw, 48px)
-    }
-
-    p {
-        max-width: 400px;
-
-        margin-top: 20px;
-        margin-bottom: 20px;
-        background-color: transparent;
-        font-weight: 400;
-
-        font-size: clamp(10px, 1.5vw, 24px);
-
-        line-height: clamp(16px, 2.3vw, 28px);
-    }
-`
-
 const Container = styled.div`
 
     position: relative;
 
-    margin-left: 13.8%;
-    margin-right: 13.8%;
-
+    margin: 0 13.8%;
     width: 72.4%;
     height: auto;
 
@@ -225,19 +148,18 @@ const ImpactCS = () => {
     <Wrapper>
         <BannerContainer ref={containerRef}>
             <img ref={imageRef} src={Banner} alt="Banner"/>
-            <Text>
+            <BannerText>
                 <h1>The Impact Agenda</h1>
                 <p>A website concept showcasing the content of a student founded social impact career podcast.</p>
                 <Button width="200px" text="View Prototype →"/>
-            </Text>
+            </BannerText>
 
         </BannerContainer>
         <Container marginTop={bannerHeight}>
             <Heading title="Overview"/>
             <p>The Impact Agenda (previously known as the i-Impact Podcast) is a podcast that explores new horizons of social good in the 21st centure. The podcast engages in conversation with innovators and leader to debunk myths about social impact careers.</p>
-            <JobDescription role="Volunteer Designer" design="February 2023 - March 2023" third="September 2023 - October 2023" tools="Figma, Adobe Photoshop, EditorX" />
-            <
-                Heading title="Design Challenge"/>
+            <JobDescription role="Volunteer Designer" h2="Intial Design" design="February 2023 - March 2023" h3="Redesign" third="September 2023 - October 2023" tools="Figma, Adobe Photoshop, EditorX" />
+            <Heading title="Design Challenge"/>
             <p>Following the rebranding from “i-Impact Podcast” to “The Impact Agenda” during its Season 2 release, redesign the original website design with a fresh look, updated content, and more streamlined elements to accommodate future seasons. Additionally, I am responsible for transferring these designs to the chosen CMS, EditorX, to create a responsive website.</p>
             <p><b>The website should:</b></p>
             <BulletedList>

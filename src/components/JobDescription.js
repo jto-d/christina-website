@@ -12,6 +12,7 @@ const Container = styled.div`
 const Info = styled.div`
     display: flex;
     flex-direction: column;
+    width: 25%;
     flex-basis: 25%;
 
     h1 {
@@ -29,7 +30,7 @@ const Info = styled.div`
 
 `
 
-const JobDescription = ({role, design, third, tools}) => {
+const JobDescription = ({role, h2, design, h3, third, tools}) => {
   return (
     <Container>
         <Info>
@@ -37,11 +38,11 @@ const JobDescription = ({role, design, third, tools}) => {
             <p>{role}</p>
         </Info>
         <Info>
-            <h1>Initial Design</h1>
+            <h1>{h2}</h1>
             <p>{design}</p>
         </Info>
         <Info>
-            <h1>Redesign</h1>
+            <h1>{h3}</h1>
             <p>{third}</p>
         </Info>
         <Info>

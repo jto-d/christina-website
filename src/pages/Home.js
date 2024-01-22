@@ -101,7 +101,7 @@ const Meow = styled.img`
 
 const Cards = styled.div`
   padding: 0;
-  margin: 0 13.8%;
+  margin: 100px 13.8%;
   height: 62vw;
 
 
