@@ -175,7 +175,7 @@ const Navbar = () => {
           <a href={'/about'}>About</a>
         </li>
         <li key='link-contact'>
-          <a href={'/contact'}>Contact</a>
+          <a href={'mailto:christinawu@princeton.edu'}>Contact</a>
         </li>
         <li key='link-linkedin'>
           <a href='https://www.linkedin.com/in/christina-shuhui-wu/'>
