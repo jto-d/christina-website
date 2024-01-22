@@ -13,7 +13,11 @@ const GlobalStyle = createGlobalStyle`
         scroll-behavior: smooth;
         font-family: var(--font-inter);
         background-color: var(--background-color);
-        overflow: hidden;
+        overflow-x: hidden;
+
+        h1, h2, h3, h4, p, a, li, ul {
+            overflow: hidden;
+        }
         
     }
 

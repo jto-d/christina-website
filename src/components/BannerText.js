@@ -19,7 +19,6 @@ const BannerText = styled.div`
         width: 400px;
         background-color: transparent;
         font-weight: 700;
-        font-size: 2.6rem;
 
         font-size: clamp(20px, 3vw, 48px)
     }

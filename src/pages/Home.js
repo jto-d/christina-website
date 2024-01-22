@@ -38,23 +38,20 @@ const Text = styled.div`
   h1 {
     color: var(--text-color);
     font-weight: 700;
-    font-size: 3rem;
+    font-size: clamp(20px, 3.5vw, 48px);
 
     @media (max-width: 750px) {
       margin-top: 10px;
-      font-size: 1.6rem;
-
     }
   }
 
   h2 {
     color: var(--primary-color);
     font-weight: 700;
-    font-size: 1.8rem;
+    font-size: clamp(20px, 2.5vw, 48px);
     margin-top: 1rem;
 
     @media (max-width: 750px) {
-      font-size: 1.3rem;
       margin-top: 10px;
     }
   }
