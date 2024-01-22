@@ -22,6 +22,11 @@ const UpperContainer = styled.div`
   justify-content: space-between;
   margin-bottom: 50px;
 
+  @media (max-width: 750px) {
+    flex-direction: column;
+    gap: 20px;
+  }
+
 `
 
 
@@ -38,6 +43,10 @@ const UpperText = styled.div`
   display: flex;
   flex-direction: column;
   width: 50%;
+
+  @media (max-width: 750px) {
+    width: 100%;
+  }
 
   p {
     margin-top: 20px;
@@ -65,7 +74,7 @@ const ImageWrapper = styled.div`
   img {
     border-radius: 10px;
     width: 100%;
-    height: 100%;
+    height: auto;
 
   }
 
