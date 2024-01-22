@@ -116,6 +116,14 @@ const Container = styled.div`
         margin-bottom: 20px;
     }
 
+    a {
+        margin-top: 50px;
+        margin-bottom: 100px;
+        font-weight: 500;
+        color: var(--primary-color);
+        text-decoration: none;
+        cursor: pointer;
+    }
 `
 
 const BulletedList = styled.ul`
@@ -231,7 +239,7 @@ const ImpactCS = () => {
                 <p>Starting with no experience in Figma and progressing to a level where I can comfortably plan user flows and prototype has been incredibly rewarding. The Impact Agenda is doing amazing work, and building a website from scratch was super fun. Returning to the project a few months later to redesign it, now with more practice and a deeper understanding of design principles, I was excited to apply my newfound knowledge. This experience not only strengthened my technical skills but also deepened my appreciation for the iterative nature of design work.</p>
             </ReflectionText>
 
-            BACK ARROW HERE
+            <a href="/campusconnect">⟵ &nbsp;&nbsp; CampusConnect</a>
             
 
         </Container>

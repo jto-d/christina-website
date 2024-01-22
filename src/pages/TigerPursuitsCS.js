@@ -1,6 +1,6 @@
 import React, { useRef, useEffect, useState } from 'react'
 import styled from 'styled-components'
-import { BannerContainer, ReflectionText, BannerText, Button, Heading, JobDescription } from '../components'
+import { BannerContainer, BulletedList, DisplayContainer, ImageRow, ReflectionText, BannerText, Button, Heading, JobDescription } from '../components'
 import { Banner } from '../assets/tigerpursuits'
 import { Empathy, Affinity, Ideation } from '../assets/tigerpursuits/photos'
 import { MyPrincetonU, SchoolEmails, TigerApps, UserPersonaOne, UserPersonaTwo } from '../assets/tigerpursuits'
@@ -40,46 +40,17 @@ const Container = styled.div`
     margin-bottom: 20px;
   }
 
-
-`
-
-const RowOfImages = styled.div`
-  display: flex;
-  justify-content: space-between;
-  flex-direction: row;
-  width: 100%;
-  height: auto;
-  gap: 40px;
-  margin: 40px 0;
-
-  img {
-    border-radius: 10px;
-    width: 100%;
-    height: auto;
-    object-fit: cover;
+  a {
+    margin-top: 50px;
+    margin-bottom: 100px;
+    font-weight: 500;
+    color: var(--primary-color);
+    cursor: pointer;
+    text-decoration: none;
   }
 
+
 `
-
-const BulletedList = styled.ul`
-    display: block;
-    list-style-type: disc;
-    list-style-position: inside;
-    color: var(--text-color);
-    margin-bottom: 20px;
-
-    ul {
-            padding-left: 0;
-        }
-
-        
-    li {
-        width: 90%;
-        text-indent: -1.3em;
-        padding-left: 1.3em;
-    }
-`
-
 const Image = styled.div`
 
     display: flex;
@@ -122,47 +93,6 @@ const ImageContainer = styled.div`
         }
     }
 
-`
-
-const DisplayContainer = styled.div`
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-direction: row;
-  margin-bottom: 100px;
-
-  div {
-    display: flex;
-    flex-direction: column;
-    width: 50%;
-  }
-  h1 {
-    font-weight: 500;
-    color: var(--primary-color);
-    font-size: 1.2rem;
-    width: 100%;
-    margin-top: 5px;
-  }
-
-  ul {
-    padding-left: 0;
-  }
-
-  
-  li {
-    margin-top: 20px;
-    width: 90%;
-    text-indent: -1.3em;
-    padding-left: 1.3em;
-  }
-
-  img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-  }
-
-  
 `
 
 const Quote = styled.div`
@@ -236,11 +166,11 @@ const TigerPursuitsCS = () => {
         <Quote>
           <h1>Acceptance and involvement in extracurriculars not only influences student self-worth, but also serves as an important platform for building community.</h1>
         </Quote>
-        <RowOfImages>
+        <ImageRow>
           <img src={Empathy}/>
           <img src={Affinity}/>
           <img src={Ideation}/>
-        </RowOfImages>
+        </ImageRow>
         <h3>Pain Points and Insights:</h3>
         <BulletedList>
           <li><b>Insecurity:</b> Students often view their skills and experiences as inadequate, hindering their extracurricular exploration.</li>
@@ -284,10 +214,10 @@ const TigerPursuitsCS = () => {
 
         <Heading title="Sample Users" />
         <p>While drafting sample user profiles, we also considered other use cases beyond the typical story of an underclassman handling rejection. Our focus was on different ways to potentially uplift students self-worth, whether that involved bouncing back after rejection or encouraging them to embrace new challenges through the information provided by our platform.</p>
-        <RowOfImages>
+        <ImageRow>
           <img src={UserPersonaOne} />
           <img src={UserPersonaTwo} />
-        </RowOfImages>
+        </ImageRow>
 
         <Heading title="TigerPursuits: How It Works" />
         <p>TigerPursuits is a comprehensive web app that offers personalized recommendations, anonymous student reviews, and community discussion boards for student clubs and organizations, creating a network of student-generated information.</p>
@@ -384,6 +314,11 @@ const TigerPursuitsCS = () => {
         <Quote>
           <h1><u>Personal Quote + Takeaway</u>: "Just because you believe something will work doesn't necessarily make it the right solution."</h1>
         </Quote>
+
+        <div style={{display: "flex", justifyContent: "flex-end"}}>
+          <a href="/campusconnect">Campus Connect &nbsp;&nbsp; ⟶</a>
+        </div>
+        
 
       </Container>
     </Wrapper>

@@ -12,6 +12,8 @@ ImpactAgenda -- Fix video sizing on large screens
 
 About -- fix image zoom (crop into the part you want)
 
+Add back arrows for all work
+
 
 
 Later Fixes -- Gatsby because static site?
