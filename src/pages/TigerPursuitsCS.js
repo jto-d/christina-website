@@ -43,6 +43,7 @@ const Container = styled.div`
   a {
     margin-top: 50px;
     margin-bottom: 100px;
+    font-size: 1.2rem;
     font-weight: 500;
     color: var(--primary-color);
     cursor: pointer;

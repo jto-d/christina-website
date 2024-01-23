@@ -23,7 +23,7 @@ const BannerText = styled.div`
         background-color: transparent;
         font-weight: 700;
 
-        font-size: clamp(20px, 2.7vw, 44px)
+        font-size: clamp(24px, 2.7vw, 44px)
     }
 
     p {
@@ -34,9 +34,9 @@ const BannerText = styled.div`
         background-color: transparent;
         font-weight: 400;
 
-        font-size: clamp(10px, 1.5vw, 24px);
+        font-size: clamp(16px, 1.5vw, 24px);
 
-        line-height: clamp(16px, 1.9vw, 28px);
+        line-height: clamp(24px, 1.9vw, 28px);
     }
 `
 

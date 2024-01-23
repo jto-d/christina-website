@@ -13,7 +13,6 @@ const Container = styled.div`
   align-items: center;
   height: 50vh;
   padding: 0;
-
   width: 100%;
 
   @media (max-width: 750px) {
@@ -48,7 +47,7 @@ const Text = styled.div`
   h2 {
     color: var(--primary-color);
     font-weight: 700;
-    font-size: clamp(16px, 2vw, 42px);
+    font-size: clamp(16px, 2vw, 32px);
     margin-top: 1rem;
 
     @media (max-width: 750px) {

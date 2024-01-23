@@ -14,7 +14,6 @@ const BulletedList = styled.ul`
 
         
     li {
-        width: 90%;
         text-indent: -1.3em;
         padding-left: 1.3em;
     }

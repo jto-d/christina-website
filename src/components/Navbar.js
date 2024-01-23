@@ -3,7 +3,7 @@ import { motion } from 'framer-motion'
 import styled, { css } from 'styled-components'
 import { HiMenuAlt4, HiX } from 'react-icons/hi'
 import { LinkedInIcon, LogoImg } from '../assets/homepage'
-
+import { useLocation } from 'react-router-dom'
 
 const Nav = styled.nav`
   position: relative;
@@ -160,6 +160,11 @@ const Menu = styled.div`
 
 const Navbar = () => {
 
+  const location = useLocation();
+
+  const isHomePage = location.pathname === '/';
+  const isAboutPage = location.pathname === '/about';
+
   const [toggle, setToggle] = useState(false);
 
   return (
@@ -169,10 +174,10 @@ const Navbar = () => {
       </a>
       <Links>
         <li key='link-home'>
-          <a href={'/'}>Work</a>
+          <a href={'/'} style={{color: isHomePage ? 'red' : 'var(--text-color)', cursor: isHomePage ? 'default' : 'pointer'}}>Work</a>
         </li>
         <li key='link-about'>
-          <a href={'/about'}>About</a>
+          <a href={'/about'} style={{color: isAboutPage ? 'red' : 'var(--text-color)', cursor: isAboutPage ? 'default' : 'pointer'}}>About</a>
         </li>
         <li key='link-contact'>
           <a href={'mailto:christinawu@princeton.edu'}>Contact</a>
@@ -195,7 +200,7 @@ const Navbar = () => {
             <HiX onClick={() => setToggle(false)}/>
             <ul>
               <li key='link-home'>
-                <a href={'/'}>Work</a>
+                <a href={'/'} >Work</a>
               </li>
               <li key='link-about'>
                 <a href={'/about'}>About</a>

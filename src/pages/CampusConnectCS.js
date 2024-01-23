@@ -41,6 +41,7 @@ const Container = styled.div`
     margin-top: 50px;
     margin-bottom: 100px;
     font-weight: 500;
+    font-size: 1.2rem;
     color: var(--primary-color);
     cursor: pointer;
     text-decoration: none;

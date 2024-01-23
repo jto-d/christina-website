@@ -55,12 +55,14 @@ const VideoContainer = styled.div`
     display: flex;
     justify-content: space-between;
     flex-direction: row;
+    gap: 40px;
 
     div {
         margin-top: 10px;
         display: flex;
         flex-direction: column;
-        width: 50%;
+        width: 60%;
+        justify-content: center;
 
         h1 {
             font-weight: 500;
@@ -77,7 +79,6 @@ const VideoContainer = styled.div`
         
         li {
             margin-top: 20px;
-            width: 90%;
             text-indent: -1.3em;
             padding-left: 1.3em;
         }
@@ -86,7 +87,7 @@ const VideoContainer = styled.div`
             margin-top: 10px;
             text-decoration: underline;
             cursor: pointer;
-            font-size: 0.8rem;
+            font-size: 1rem;
             text-align: center;
         }
 
@@ -117,8 +118,8 @@ const Container = styled.div`
 
     a {
         margin-top: 50px;
-        margin-bottom: 100px;
         font-weight: 500;
+        font-size: 1.2rem;
         color: var(--primary-color);
         text-decoration: none;
         cursor: pointer;
@@ -178,7 +179,7 @@ const ImpactCS = () => {
             
             <Heading title="First Iteration (Initial Design)"/>
             <VideoContainer>
-                <div>
+                <div style={{width: "40%"}}>
                     <h1>"i-Impact Prodcast" Website Concept</h1>
                     <BulletedList>
                         <li>Implemented colors and typography from the podcast style guide.</li>
@@ -188,7 +189,7 @@ const ImpactCS = () => {
                     </BulletedList>
                 </div>
                 <div>
-                    <ReactPlayer url="https://www.youtube.com/watch?v=mf76Yw9lalk" style={{overflow: "hidden"}}/>
+                    <ReactPlayer url="https://www.youtube.com/watch?v=CiwUIfSB6ks" width="100%" height="24vw"/>
                     <a>View protoype</a>
                 </div>
             </VideoContainer>
@@ -196,7 +197,7 @@ const ImpactCS = () => {
             <Heading title="Second Iteration (Redesign)"/>
             <VideoContainer>
                 <div>
-                    <ReactPlayer url="https://www.youtube.com/watch?v=mf76Yw9lalk" style={{overflow: "hidden"}}/>
+                    <ReactPlayer url="https://youtu.be/DSVF_GpmA2g" width="100%" height="19.2vw"/>
                     <a>View protoype</a>
                 </div>
                 <div style={{marginLeft: "5%"}}>
@@ -238,7 +239,7 @@ const ImpactCS = () => {
                 <p>Starting with no experience in Figma and progressing to a level where I can comfortably plan user flows and prototype has been incredibly rewarding. The Impact Agenda is doing amazing work, and building a website from scratch was super fun. Returning to the project a few months later to redesign it, now with more practice and a deeper understanding of design principles, I was excited to apply my newfound knowledge. This experience not only strengthened my technical skills but also deepened my appreciation for the iterative nature of design work.</p>
             </ReflectionText>
 
-            <a href="/campusconnect">⟵ &nbsp;&nbsp; CampusConnect</a>
+            <a href="/campusconnect" style={{marginBottom: "100px"}}>⟵ &nbsp;&nbsp; CampusConnect</a>
             
 
         </Container>
