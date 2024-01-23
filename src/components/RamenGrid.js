@@ -67,6 +67,10 @@ const Container = styled.div`
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 10px;
 
+    @media (max-width: 750px) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
     // add media queries for responsiveness here
 
 `
@@ -75,16 +79,16 @@ const Item = styled.div`
     padding-bottom: 30px;
 
     h1 {
-        margin-top: 5px;
+        margin-top: 20px;
         color: var(--primary-color);
         font-weight: 600;
-        font-size: 0.8rem;
+        font-size: 1.1rem;
     }
 
     p {
-        margin-top: 5px;
+        margin-top: 10px;
         font-weight: 400;
-        font-size: 0.7rem;
+        font-size: 1rem;
     }
 
 `
