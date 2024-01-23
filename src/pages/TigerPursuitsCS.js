@@ -316,7 +316,7 @@ const TigerPursuitsCS = () => {
         </Quote>
 
         <div style={{display: "flex", justifyContent: "flex-end"}}>
-          <a href="/campusconnect">Campus Connect &nbsp;&nbsp; ⟶</a>
+          <a href="/campusconnect">CampusConnect &nbsp;&nbsp; ⟶</a>
         </div>
         
 

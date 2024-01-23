@@ -55,7 +55,6 @@ const VideoContainer = styled.div`
     display: flex;
     justify-content: space-between;
     flex-direction: row;
-    margin-bottom: 100px;
 
     div {
         margin-top: 10px;

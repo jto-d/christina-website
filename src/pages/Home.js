@@ -152,7 +152,7 @@ const Home = () => {
         <a href="/impactagenda">
           <Card img={ImpactAgenda} header="The Impact Agenda · Website Concept" body="A website concept showcasing the content of a student-founded social impact career podcast."/>
         </a>
-        <Card img={DevelopForGood} header="Miricyl · Mental Health Web App (Coming Soon)" body="A web app for accessing mental health resource and personalized care." />
+        <Card img={DevelopForGood} header="Miricyl · Mental Health Web App (Coming Soon)" body="A web app for accessing mental health resources and personalized care." />
     </Cards>
     </>
   )

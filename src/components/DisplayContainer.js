@@ -12,6 +12,7 @@ const DisplayContainer = styled.div`
     display: flex;
     flex-direction: column;
     width: 50%;
+    gap: 20px;
   }
   h1 {
     font-weight: 500;
