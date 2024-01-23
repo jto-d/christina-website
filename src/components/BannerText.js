@@ -13,7 +13,10 @@ const BannerText = styled.div`
     z-index: 1;
     background-color: transparent;
 
-
+    a {
+        background-color: transparent;
+        width: 200px;
+    }
     h1 {
         margin-top: 10%;
         width: 400px;

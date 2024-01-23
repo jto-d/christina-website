@@ -23,10 +23,10 @@ const Header = styled.div`
     }
 `
 
-const Heading = ({title}) => {
+const Heading = ({title, id}) => {
   return (
     <Header>
-        <h1>{title}</h1>
+        <h1 id={id}>{title}</h1>
         <hr />
     </Header>
     

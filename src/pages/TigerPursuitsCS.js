@@ -1,7 +1,7 @@
 import React, { useRef, useEffect, useState } from 'react'
 import styled from 'styled-components'
 import { BannerContainer, BulletedList, DisplayContainer, ImageRow, ReflectionText, BannerText, Button, Heading, JobDescription } from '../components'
-import { Banner } from '../assets/tigerpursuits'
+import { TigerBanner } from '../assets/tigerpursuits'
 import { Empathy, Affinity, Ideation } from '../assets/tigerpursuits/photos'
 import { MyPrincetonU, SchoolEmails, TigerApps, UserPersonaOne, UserPersonaTwo } from '../assets/tigerpursuits'
 import { MyPrincetonUAuth, CommunityPage, RecommendationsGeneratedOne, RecommendationsGeneratedTwo, ExploreClubOne, ExploreClubTwo, LeaveReviewsOne, LeaveReviewsTwo, TigerPursuitsValues } from '../assets/tigerpursuits/howitworks'
@@ -135,11 +135,11 @@ const TigerPursuitsCS = () => {
   return (
     <Wrapper>
       <BannerContainer ref={containerRef}>
-        <img ref={imageRef} src={Banner} alt="Banner"/>
+        <img ref={imageRef} src={TigerBanner} alt="Banner"/>
         <BannerText>
           <h1>TigerPursuits</h1>
           <p>A web app enhancing transparency in student extracurriculars exploration for ENT200.</p>
-          <Button width="200px" text="View Prototype →"/>
+          <a href="https://www.figma.com/proto/EwYeKsMKKAS0qcQWgoERm9/TigerPursuits-Prototype?type=design&node-id=573-1443&t=AJRNQTH9l11rCZbM-1&scaling=scale-down&page-id=492%3A172&starting-point-node-id=573%3A1443"><Button width="200px" text="View Prototype →"/></a>
         </BannerText>
       </BannerContainer>
 

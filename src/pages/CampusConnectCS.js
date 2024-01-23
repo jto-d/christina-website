@@ -1,7 +1,7 @@
 import React, { useRef, useState, useEffect } from 'react'
 import styled from 'styled-components'
 import { BannerContainer, DisplayContainer, ImageRow, ReflectionText, BannerText, Button, Heading, JobDescription, BulletedList } from '../components'
-import { Banner, Preview, StyleGuide, InformationArchitecture, Wireframes } from '../assets/campusconnect'
+import { CampusBanner, Preview, StyleGuide, InformationArchitecture, Wireframes } from '../assets/campusconnect'
 import { Explore, Group, Event, Task, Messaging } from '../assets/campusconnect/PhoneScreens'
 
 const Wrapper = styled.div`
@@ -67,11 +67,11 @@ const CampusConnectCS = () => {
   return (
     <Wrapper>
       <BannerContainer ref={containerRef}>
-        <img ref={imageRef} src={Banner} alt="Banner" />
+        <img ref={imageRef} src={CampusBanner} alt="Banner" />
         <BannerText>
           <h1>CampusConnect</h1>
           <p>A mobile app concept streamlining student group management with location services for a Princeton-based student startup.</p>
-          <Button width="200px" text="Final Designs →"/>
+          <a href="#designs"><Button width="200px" text="Final Designs →"/></a>
         </BannerText>
       </BannerContainer>
 
@@ -94,7 +94,7 @@ const CampusConnectCS = () => {
           <img style={{width: "90vw"}}src={InformationArchitecture} />
         </ImageRow>
 
-        <Heading title="CampusConnect: How It Works" />
+        <Heading title="CampusConnect: How It Works" id="designs"/>
         <DisplayContainer>
           <div>
             <h1>Explore Page</h1>

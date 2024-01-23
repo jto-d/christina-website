@@ -1,6 +1,6 @@
 import React, { useRef, useEffect, useState } from 'react'
 import styled, { css } from 'styled-components'
-import { VideoOne, VideoTwo, EditorXLogo, Design, SeasonThree, Banner } from '../assets/impactagenda'
+import { VideoOne, VideoTwo, EditorXLogo, Design, SeasonThree, ImpactBanner } from '../assets/impactagenda'
 import { Button, Heading, JobDescription, ReflectionText, BannerContainer, BannerText } from '../components'
 import ReactPlayer from 'react-player'
 
@@ -155,11 +155,11 @@ const ImpactCS = () => {
   return (
     <Wrapper>
         <BannerContainer ref={containerRef}>
-            <img ref={imageRef} src={Banner} alt="Banner"/>
+            <img ref={imageRef} src={ImpactBanner} alt="Banner"/>
             <BannerText>
                 <h1>The Impact Agenda</h1>
                 <p>A website concept showcasing the content of a student founded social impact career podcast.</p>
-                <Button width="200px" text="View Prototype →"/>
+                <a href="https://www.figma.com/proto/yD29W2hN77ElmBjWRsWCOa/The-Impact-Agenda-Podcast?type=design&node-id=111-319&t=yXQvaSav2gpHfioy-1&scaling=scale-down&page-id=14%3A2&starting-point-node-id=111%3A319"><Button width="200px" text="View Prototype →"/></a>
             </BannerText>
 
         </BannerContainer>

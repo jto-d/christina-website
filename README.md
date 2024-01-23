@@ -11,6 +11,8 @@ ImpactAgenda -- Fix video sizing on large screens
 
 About -- fix image zoom (crop into the part you want)
 
+CampusConnect -- button scroll to final designs
+
 * -- Fix footer responsivity
 
 Later Fixes -- Gatsby because static site?
