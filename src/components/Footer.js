@@ -76,7 +76,7 @@ const Footer = () => {
         <h1>Thanks for visiting!</h1>
       </TopText>
       <BottomText>
-        <p>© 2023 Christina Wu | Made with lots of naps</p>
+        <p>© 2024 Christina Wu | Made with lots of naps</p>
         <ul>
           <li>
             <a href='mailto:christinawu@princeton.edu'>Email</a>

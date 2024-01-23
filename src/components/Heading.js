@@ -4,6 +4,7 @@ import styled from 'styled-components'
 const Header = styled.div`
     display: flex;
     flex-direction: column;
+    margin-top: 50px;
 
     color: var(--primary-color);
 
