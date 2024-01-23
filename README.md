@@ -3,11 +3,9 @@
 TODO:
 Home -- Change Linkedin icon to SVG and apply hover effect
         fix menu transition issue, fixed i think??
-        fix responsivity issues
-        make designer and ramen enthusiast smaller (and more responsive)
+        implement mobile screen
 
-Banner -- make subtext smaller + responsive
-          more padding on top and bottom for the button
+Banner -- more padding on top and bottom for the button
 
 ImpactAgenda -- Fix video sizing on large screens
                 fix banner resizing glitch *****

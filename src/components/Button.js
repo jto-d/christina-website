@@ -7,7 +7,7 @@ const Btn = styled.button`
 
     background-color: var(--text-color);
     color: var(--background-color);
-    padding: 10px 20px;
+    padding: 12px 15px;
     border: none;
     border-radius: 10px; /* Adjust if needed to match the curvature of the button in the screenshot */
     font-size: 16px;

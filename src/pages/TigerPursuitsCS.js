@@ -139,7 +139,7 @@ const TigerPursuitsCS = () => {
         <BannerText>
           <h1>TigerPursuits</h1>
           <p>A web app enhancing transparency in student extracurriculars exploration for ENT200.</p>
-          <a href="https://www.figma.com/proto/EwYeKsMKKAS0qcQWgoERm9/TigerPursuits-Prototype?type=design&node-id=573-1443&t=AJRNQTH9l11rCZbM-1&scaling=scale-down&page-id=492%3A172&starting-point-node-id=573%3A1443"><Button width="200px" text="View Prototype →"/></a>
+          <a href="https://www.figma.com/proto/EwYeKsMKKAS0qcQWgoERm9/TigerPursuits-Prototype?type=design&node-id=573-1443&t=AJRNQTH9l11rCZbM-1&scaling=scale-down&page-id=492%3A172&starting-point-node-id=573%3A1443"><Button width="180px" text="View Prototype →"/></a>
         </BannerText>
       </BannerContainer>
 

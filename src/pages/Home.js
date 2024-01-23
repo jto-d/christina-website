@@ -48,7 +48,7 @@ const Text = styled.div`
   h2 {
     color: var(--primary-color);
     font-weight: 700;
-    font-size: clamp(20px, 2.5vw, 48px);
+    font-size: clamp(16px, 2vw, 42px);
     margin-top: 1rem;
 
     @media (max-width: 750px) {
@@ -60,7 +60,7 @@ const Text = styled.div`
     margin-top: 1rem;
     color: var(--text-color);
     font-weight: 400;
-    font-size: 1rem;
+    font-size: clamp(12px, 1.2vw, 22px);
     line-height: 1.5rem;
     width: 100%;
     letter-spacing: .05em;

@@ -71,7 +71,7 @@ const CampusConnectCS = () => {
         <BannerText>
           <h1>CampusConnect</h1>
           <p>A mobile app concept streamlining student group management with location services for a Princeton-based student startup.</p>
-          <a href="#designs"><Button width="200px" text="Final Designs →"/></a>
+          <a href="#designs"><Button width="180px" text="Final Designs →"/></a>
         </BannerText>
       </BannerContainer>
 
