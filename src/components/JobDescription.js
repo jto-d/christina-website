@@ -7,25 +7,25 @@ const Container = styled.div`
     justify-content: space-between;
     flex-direction: row;
     margin-bottom: 20px;
+
+    @media (max-width: 800px) {
+        flex-direction: column;
+    }
 `
 
 const Info = styled.div`
     display: flex;
     flex-direction: column;
-    width: 25%;
-    flex-basis: 25%;
 
     h1 {
         font-weight: 500;
         color: var(--primary-color);
         font-size: 1.3rem;
-        width: 100%;
     }
 
     p {
         font-weight: 400;
         margin-top: 20px;
-        width: 60%;
     }
 
 `

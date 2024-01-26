@@ -19,15 +19,15 @@ const BannerText = styled.div`
     }
     h1 {
         margin-top: 10%;
-        width: 400px;
+        width: clamp(400px, 26vw, 800px);
         background-color: transparent;
         font-weight: 700;
 
-        font-size: clamp(24px, 2.7vw, 44px)
+        font-size: clamp(24px, 2.6vw, 44px)
     }
 
     p {
-        max-width: 350px;
+        width: clamp(300px, 18vw, 800px);
 
         margin-top: 20px;
         margin-bottom: 20px;

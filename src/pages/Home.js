@@ -105,7 +105,7 @@ const Cards = styled.div`
   grid-template-columns: 50% 50%;
   grid-row: auto auto;
   grid-column-gap: 2.4%;
-  grid-row-gap: 2%;
+  grid-row-gap: 50px;
 
   @media (max-width: 700px ) {
     margin: 40px 13.8%;
