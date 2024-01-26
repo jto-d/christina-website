@@ -61,6 +61,10 @@ const Image = styled.div`
     height: auto;
     width: 21vw;
 
+    @media (max-width: 700px) {
+      width: 50%;
+    }
+
     img {
         border-radius: 10px;
         height: 100%;
@@ -83,15 +87,25 @@ const ImageContainer = styled.div`
         display: flex;
         flex-direction: column;
 
-        p {
+        p, ul {
             margin-top: 20px;
             width: 90%;
+
+            @media (max-width: 700px) {
+              margin-top: 5px;
+            }
         }
 
         h2 {
           margin-top: 20px;
           font-size: 1.2rem;
         }
+    }
+
+    @media (max-width: 700px) {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
     }
 
 `
