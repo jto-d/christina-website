@@ -18,6 +18,10 @@ const Info = styled.div`
     display: flex;
     flex-direction: column;
 
+    @media (max-width: 800px) {
+        margin-left: 0;
+    }
+
     h1 {
         font-weight: 500;
         color: var(--primary-color);

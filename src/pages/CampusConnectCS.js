@@ -109,7 +109,7 @@ const CampusConnectCS = () => {
         </ImageRow>
 
         <Heading title="CampusConnect: How It Works" id="designs"/>
-        <DisplayContainer>
+        <DisplayContainer reverse>
           <div>
             <h1>Explore Page</h1>
             <BulletedList>
@@ -127,7 +127,7 @@ const CampusConnectCS = () => {
           <div>
             <img src={Group} />
           </div>
-          <div style={{paddingLeft: "50px"}}>
+          <div>
             <h1>Group Management</h1>
             <BulletedList>
               <li>Easily switch between different groups on the "Explore" page, and create or join a group.</li>
@@ -136,7 +136,7 @@ const CampusConnectCS = () => {
           </div>
         </DisplayContainer>
         
-        <DisplayContainer>
+        <DisplayContainer reverse>
           <div>
             <h1>Event Management</h1>
             <BulletedList>
@@ -152,7 +152,7 @@ const CampusConnectCS = () => {
           <div>
             <img src={Task} />
           </div>
-          <div style={{paddingLeft: "50px"}}>
+          <div>
             <h1>Task Management</h1>
             <BulletedList>
               <li>Group owners and those granted admin rights are also able to assign tasks under the "Planner," facilitating efficient task delegation and tracking progress within the group.</li>
@@ -160,7 +160,7 @@ const CampusConnectCS = () => {
           </div>
         </DisplayContainer>
 
-        <DisplayContainer>
+        <DisplayContainer reverse>
           <div>
             <h1>Messaging</h1>
             <BulletedList>

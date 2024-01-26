@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import { BannerContainer, BulletedList, DisplayContainer, ImageRow, ReflectionText, BannerText, Button, Heading, JobDescription } from '../components'
 import { TigerBanner } from '../assets/tigerpursuits'
 import { Empathy, Affinity, Ideation } from '../assets/tigerpursuits/photos'
-import { MyPrincetonU, SchoolEmails, TigerApps, UserPersonaOne, UserPersonaTwo } from '../assets/tigerpursuits'
+import { MyPrincetonU, SchoolEmails, TigerApps, UserPersonaOne, UserPersonaTwo, Preview } from '../assets/tigerpursuits'
 import { MyPrincetonUAuth, CommunityPage, RecommendationsGeneratedOne, RecommendationsGeneratedTwo, ExploreClubOne, ExploreClubTwo, LeaveReviewsOne, LeaveReviewsTwo, TigerPursuitsValues } from '../assets/tigerpursuits/howitworks'
 
 
@@ -173,7 +173,7 @@ const TigerPursuitsCS = () => {
 
         <Heading title="Problem Statement" />
         <h2>How can we develop a platform that promotes transparency in extracurricular activities and provides support for students who experience rejection from these activities?</h2>
-        images go HERE
+        <img src={Preview} />
 
         <Heading title="Discovery" />
         <h2>With more than 500 student organizations and a competitive atmosphere to gain experience, facing rejection from selective clubs and organizations is unavoidable at Princeton. 9 out of 10 of our interviewees have experienced some form of rejection.</h2>
@@ -237,7 +237,7 @@ const TigerPursuitsCS = () => {
         <Heading title="TigerPursuits: How It Works" />
         <p>TigerPursuits is a comprehensive web app that offers personalized recommendations, anonymous student reviews, and community discussion boards for student clubs and organizations, creating a network of student-generated information.</p>
         
-        <DisplayContainer style={{marginTop: "30px"}}>
+        <DisplayContainer style={{marginTop: "30px"}} reverse>
           <div>
             <h1>MyPrincetonU Authentication</h1>
             <BulletedList>
@@ -256,7 +256,7 @@ const TigerPursuitsCS = () => {
             <img src={RecommendationsGeneratedOne}/>
             <img src={RecommendationsGeneratedTwo} />
           </div>
-          <div style={{paddingLeft: "50px"}}>
+          <div>
             <h1>Recommendations Generated via Questionnaire</h1>
             <BulletedList>
               <li>New users have the option to take a questionnaire or skip it.</li>
@@ -266,7 +266,7 @@ const TigerPursuitsCS = () => {
           </div>
         </DisplayContainer>
 
-        <DisplayContainer>
+        <DisplayContainer reverse>
           <div>
             <h1>Explore Club Profiles</h1>
             <BulletedList>
@@ -286,7 +286,7 @@ const TigerPursuitsCS = () => {
             <img src={LeaveReviewsOne}/>
             <img src={LeaveReviewsTwo} />
           </div>
-          <div style={{paddingLeft: "50px"}}>
+          <div>
             <h1>Leave Reviews</h1>
             <BulletedList>
               <li>Slider reviews are averaged and categorized into four important club aspects, which were identified through user testing.</li>
@@ -296,7 +296,7 @@ const TigerPursuitsCS = () => {
           </div>
         </DisplayContainer>
 
-        <DisplayContainer>
+        <DisplayContainer reverse>
           <div>
             <h1>Community Forum</h1>
             <BulletedList>
