@@ -190,7 +190,7 @@ const ImpactCS = () => {
                 </div>
                 <div>
                     <ReactPlayer url="https://www.youtube.com/watch?v=CiwUIfSB6ks" width="100%" height="24vw"/>
-                    <a>View protoype</a>
+                    <a href="https://www.figma.com/proto/yD29W2hN77ElmBjWRsWCOa/The-Impact-Agenda-Website?type=design&node-id=111-319&t=O6Kdj2JPnElHKkzc-0&scaling=scale-down&page-id=14%3A2&starting-point-node-id=111%3A319">View protoype</a>
                 </div>
             </VideoContainer>
             
@@ -198,7 +198,7 @@ const ImpactCS = () => {
             <VideoContainer>
                 <div>
                     <ReactPlayer url="https://youtu.be/DSVF_GpmA2g" width="100%" height="24vw"/>
-                    <a>View protoype</a>
+                    <a href="https://www.figma.com/proto/yD29W2hN77ElmBjWRsWCOa/The-Impact-Agenda-Website?type=design&node-id=111-319&t=O6Kdj2JPnElHKkzc-0&scaling=scale-down&page-id=14%3A2&starting-point-node-id=111%3A319">View protoype</a>
                 </div>
                 <div style={{marginLeft: "5%", width: "40%"}}>
                     <h1>"The Impact Agenda" Website Concept</h1>

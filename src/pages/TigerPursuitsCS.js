@@ -167,7 +167,7 @@ const TigerPursuitsCS = () => {
         <h2>Find an effective way to develop <u>self-worth</u> among Princeton undergraduate students.</h2>
         <p>Self-worth is a wicked problem, meaning that it does not have a correct design solution, but our propose solution should be:</p>
         <BulletedList>
-          <li><b>Practical</b> to implement and have the <b>portential for impact.</b></li>
+          <li><b>Practical</b> to implement and have the <b>potential for impact.</b></li>
           <li><b>Creative</b> and maintain an <b>overall appeal</b> to the intended audience.</li>
         </BulletedList>
 
