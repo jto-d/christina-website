@@ -14,6 +14,7 @@ const Container = styled.div`
 `
 
 const Info = styled.div`
+    margin-left: 10px;
     display: flex;
     flex-direction: column;
 
@@ -33,7 +34,7 @@ const Info = styled.div`
 const JobDescription = ({role, h2, design, h3, third, tools}) => {
   return (
     <Container>
-        <Info>
+        <Info style={{marginLeft: "0px"}}>
             <h1>Role</h1>
             <p>{role}</p>
         </Info>

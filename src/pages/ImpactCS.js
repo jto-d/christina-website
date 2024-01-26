@@ -197,10 +197,10 @@ const ImpactCS = () => {
             <Heading title="Second Iteration (Redesign)"/>
             <VideoContainer>
                 <div>
-                    <ReactPlayer url="https://youtu.be/DSVF_GpmA2g" width="100%" height="19.2vw"/>
+                    <ReactPlayer url="https://youtu.be/DSVF_GpmA2g" width="100%" height="24vw"/>
                     <a>View protoype</a>
                 </div>
-                <div style={{marginLeft: "5%"}}>
+                <div style={{marginLeft: "5%", width: "40%"}}>
                     <h1>"The Impact Agenda" Website Concept</h1>
                     <BulletedList>
                         <li>Adopted a sleeker look, moving away from initial gradient patterns.</li>

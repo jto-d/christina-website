@@ -8,7 +8,7 @@ const BannerContainer = styled.div`
     top: 0;
     left: 0;
     z-index: 0;
-    overlfow: hidden;
+    overflow: hidden;
 
     img {
         display: block;
