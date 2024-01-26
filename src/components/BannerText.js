@@ -34,9 +34,9 @@ const BannerText = styled.div`
         background-color: transparent;
         font-weight: 400;
 
-        font-size: clamp(16px, 1.5vw, 24px);
+        font-size: clamp(16px, 1.5vw, 20px);
 
-        line-height: clamp(24px, 1.9vw, 28px);
+        line-height: clamp(24px, 1.9vw, 24px);
     }
 `
 

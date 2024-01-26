@@ -48,6 +48,19 @@ const Container = styled.div`
   }
 `
 
+const FooterDiv = styled.div`
+
+  display: flex;
+  justify-content: space-between;
+
+  a {
+    @media (max-width: 700px) {
+      font-size: 0.8rem;
+    };
+  }
+
+`
+
 const CampusConnectCS = () => {
 
   const imageRef = useRef(null);
@@ -165,10 +178,10 @@ const CampusConnectCS = () => {
           <p>As a designer who also studies entrepreneurship, I recognize the importance of a clear value proposition. Given additional time, I would focus on pinpointing the app's key features and conducting a thorough competitive analysis to differentiate it from similar apps. Regardless of the startup's future, I'm grateful for the opportunity to design for other students and help them bring their ideas to life through design!</p>
         </ReflectionText>
 
-        <div style={{display: "flex", flexDirection: "row", justifyContent: "space-between"}}>
+        <FooterDiv>
           <a href="/tigerpursuits">⟵ &nbsp;&nbsp; TigerPursuits</a>
           <a href="/impactagenda">The Impact Agenda &nbsp;&nbsp; ⟶</a>
-        </div>
+        </FooterDiv>
         
         
         
