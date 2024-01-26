@@ -26,7 +26,7 @@ const TopText = styled.div`
     font-weight: 700;
     font-size: 1.3rem;
 
-    @media (max-width: 750px) {
+    @media (max-width: 700px) {
       font-size: 1.1rem;
     }
   }
@@ -40,8 +40,8 @@ const BottomText = styled.div`
   display: flex;
   flex-direction: row;
 
-  @media (max-width: 750px) {
-    flex-direction: column;
+  @media (max-width: 700px) {
+    flex-direction: column-reverse;
     gap: 10px;
   }
   justify-content: space-between;
@@ -60,6 +60,10 @@ const BottomText = styled.div`
     font-weight: 400;
     font-size: 0.9rem;
     text-decoration: none;
+
+    @media (max-width: 700px) {
+      font-size: 0.8rem;
+    }
   }
 
   a:hover {

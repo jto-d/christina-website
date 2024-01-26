@@ -17,32 +17,48 @@ const Text = styled.p`
 const UpperContainer = styled.div`
   margin-left: 13.4%;
   margin-right: 13.4%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 50px;
   margin-bottom: 50px;
+  align-items: stretch;
 
-  @media (max-width: 750px) {
-    flex-direction: column;
-    gap: 20px;
+  @media (max-width: 600px) {
+    grid-template-columns: 1fr;
   }
 
 `
 
+const ImageWrapper = styled.div`
+  overflow: hidden;
+  height: 100%;
+  max-height: 800px;
 
-const Header = styled.h1`
-  font-weight: 600;
-  font-size: 1.6rem;
-  color: var(--primary-color);
-`
-const LowerHeader = styled(Header)`
-  margin: 10px 13.4% 0 13.4%;
+  img {
+    border-radius: 15px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+    @media (max-width: 900px) {
+      width: 50%;
+      height: auto;
+    }
+
+  }
+
+  @media (max-width: 900px) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
 `
 
 const UpperText = styled.div`
   display: flex;
   flex-direction: column;
-  width: 50%;
+  justify-content: center;
 
   @media (max-width: 750px) {
     width: 100%;
@@ -56,6 +72,18 @@ const UpperText = styled.div`
 
 `
 
+
+const Header = styled.h1`
+  font-weight: 600;
+  font-size: 1.6rem;
+  color: var(--primary-color);
+`
+const LowerHeader = styled(Header)`
+  margin: 10px 13.4% 0 13.4%;
+`
+
+
+
 const CarouselContainer = styled.div`
   width: 100vw;
   position: relative;
@@ -66,19 +94,7 @@ const CarouselContainer = styled.div`
 
 `;
 
-const ImageWrapper = styled.div`
-  width: ${props => props.width || '40%'};
-  height: auto;
-  overflow: hidden;
 
-  img {
-    border-radius: 10px;
-    width: 100%;
-    height: auto;
-
-  }
-
-`
 
 const About = () => {
   return (
@@ -114,7 +130,7 @@ const About = () => {
       <LowerHeader>👩🏻‍💻 Check out my MacBook Stickers!</LowerHeader>
       <Text>It'll probably be another year until I find the willpower to change them...</Text>
 
-      <ImageWrapper width={"60%"} style={{marginLeft: "20%", marginTop: "50px", marginBottom: "100px"}}>
+      <ImageWrapper width={"60%"} style={{marginTop: "50px", marginBottom: "100px", maxHeight: "100%", width: "50%", marginLeft: "25%"}}>
         <img src={Macbook} />
       </ImageWrapper>
 

@@ -15,17 +15,17 @@ const Container = styled.div`
   padding: 0;
   width: 100%;
 
-  @media (max-width: 750px) {
+  @media (max-width: 900px) {
+    justify-content: flex-start;
     flex-direction: column;
     justify-content: left;
     align-items: center;
-    height: 60vh;
   }
+  
 
 `
 
 const Text = styled.div`
-  height: 40vh;
   margin-left: 13.8%;
   width: 40%;
 
@@ -39,8 +39,8 @@ const Text = styled.div`
     font-weight: 700;
     font-size: clamp(20px, 3.5vw, 48px);
 
-    @media (max-width: 750px) {
-      margin-top: 10px;
+    @media (max-width: 900px) {
+      margin-top: 50px;
     }
   }
 
@@ -50,7 +50,7 @@ const Text = styled.div`
     font-size: clamp(16px, 2vw, 32px);
     margin-top: 1rem;
 
-    @media (max-width: 750px) {
+    @media (max-width: 900px) {
       margin-top: 10px;
     }
   }
@@ -60,16 +60,16 @@ const Text = styled.div`
     color: var(--text-color);
     font-weight: 400;
     font-size: clamp(12px, 1.2vw, 22px);
-    line-height: 1.5rem;
+    line-height: clamp(18px, 1.5vw, 28px);
     width: 100%;
     letter-spacing: .05em;
 
-    @media (max-width: 750px) {
+    @media (max-width: 900px) {
       margin-top: 10px;
     }
   }
 
-  @media (max-width: 750px) {
+  @media (max-width: 900px) {
     margin-left: 0;
     width: 82.4%;
   }
@@ -90,7 +90,7 @@ const Meow = styled.img`
     margin-right: 0;
   }
   @media (max-width: 500px) {
-    height: 18vh;
+    height: 25vh;
   }
 `
 
@@ -98,7 +98,6 @@ const Meow = styled.img`
 const Cards = styled.div`
   padding: 0;
   margin: 100px 13.8%;
-  height: 62vw;
 
 
 
@@ -109,12 +108,16 @@ const Cards = styled.div`
   grid-row-gap: 2%;
 
   @media (max-width: 700px ) {
-    height: 120vh;
+    margin: 40px 13.8%;
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-left: 0;
     margin-right: 0;
+  }
+
+  a {
+    text-decoration: none;
   }
   
 

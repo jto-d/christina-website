@@ -67,7 +67,7 @@ const Container = styled.div`
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 10px;
 
-    @media (max-width: 750px) {
+    @media (max-width: 900px) {
         grid-template-columns: repeat(2, 1fr);
     }
 
@@ -97,6 +97,12 @@ const ItemImage = styled.img`
     width: 100%;
     height: auto;
     border-radius: 10px;
+
+    img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
 
 `
 
