@@ -27,16 +27,16 @@ const BannerText = styled.div`
     }
 
     p {
-        width: clamp(300px, 18vw, 800px);
+        width: clamp(320px, 24vw, 1000px);
 
         margin-top: 20px;
         margin-bottom: 20px;
         background-color: transparent;
         font-weight: 400;
 
-        font-size: clamp(16px, 1.5vw, 20px);
+        font-size: clamp(16px, 1.4vw, 22px);
 
-        line-height: clamp(24px, 1.9vw, 24px);
+        line-height: clamp(24px, 1.8vw, 24px);
     }
 `
 

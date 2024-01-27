@@ -72,6 +72,20 @@ const UpperText = styled.div`
 
 `
 
+const MacbookImage = styled.div`
+  width: 50%;
+  margin-top: 50px;
+  margin-bottom: 100px;
+  max-height: 100%;
+  margin-left: 25%;
+
+  img {
+    width: 100%;
+    object-fit: cover;
+  }
+
+`
+
 
 const Header = styled.h1`
   font-weight: 600;
@@ -130,9 +144,9 @@ const About = () => {
       <LowerHeader>👩🏻‍💻 Check out my MacBook Stickers!</LowerHeader>
       <Text>It'll probably be another year until I find the willpower to change them...</Text>
 
-      <ImageWrapper width={"60%"} style={{marginTop: "50px", marginBottom: "100px", maxHeight: "100%", width: "50%", marginLeft: "25%"}}>
+      <MacbookImage>
         <img src={Macbook} />
-      </ImageWrapper>
+      </MacbookImage>
 
     </Container>
 

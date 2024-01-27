@@ -165,7 +165,7 @@ const ImpactCS = () => {
         </BannerContainer>
         <Container marginTop={bannerHeight}>
             <Heading title="Overview"/>
-            <p>The Impact Agenda (previously known as the i-Impact Podcast) is a podcast that explores new horizons of social good in the 21st centure. The podcast engages in conversation with innovators and leader to debunk myths about social impact careers.</p>
+            <p>The Impact Agenda (previously known as the i-Impact Podcast) is a podcast that explores new horizons of social good in the 21st century. The podcast engages in conversation with innovators and leader to debunk myths about social impact careers.</p>
             <JobDescription role="Volunteer Designer" h2="Intial Design" design="February 2023 - March 2023" h3="Redesign" third="September 2023 - October 2023" tools="Figma, Adobe Photoshop, EditorX" />
             <Heading title="Design Challenge"/>
             <p>Following the rebranding from “i-Impact Podcast” to “The Impact Agenda” during its Season 2 release, redesign the original website design with a fresh look, updated content, and more streamlined elements to accommodate future seasons. Additionally, I am responsible for transferring these designs to the chosen CMS, EditorX, to create a responsive website.</p>
