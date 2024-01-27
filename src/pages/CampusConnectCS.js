@@ -70,19 +70,34 @@ const CampusConnectCS = () => {
   const [bannerHeight, setBannerHeight] = useState('0px');
 
   useEffect(() => {
+    const updateHeight = () => {
+
       if (imageRef.current && containerRef.current) {
           const height = `${imageRef.current.offsetHeight}px`;
+          const doubleHeight = `${imageRef.current.offsetHeight * 2 + 70}px`;
           const margin = `${imageRef.current.offsetHeight - 168}px`;
-          containerRef.current.style.height = height;
+          containerRef.current.style.height = window.innerWidth <= 700 ? doubleHeight : height;
           setBannerHeight(margin);
       }
-  }, [])
+          
+    }
+
+    updateHeight();
+    window.addEventListener('resize', updateHeight)
+
+
+    return () => {
+      window.removeEventListener('resize', updateHeight);
+    }
+
+      
+  }, [imageRef, containerRef])
 
   return (
     <Wrapper>
       <BannerContainer ref={containerRef}>
         <img ref={imageRef} src={CampusBanner} alt="Banner" />
-        <BannerText>
+        <BannerText topMargin={`${parseInt(bannerHeight, 10) + 168}px`}>
           <h1>CampusConnect</h1>
           <p>A mobile app concept streamlining student group management with location services for a Princeton-based student startup.</p>
           <a href="#designs"><Button width="180px" text="Final Designs →"/></a>

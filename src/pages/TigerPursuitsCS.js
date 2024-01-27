@@ -50,6 +50,10 @@ const Container = styled.div`
     text-decoration: none;
   }
 
+  @media (max-width: 700px) {
+    margin-top: ${props => props.topMargin || '0px'}
+  }
+
 
 `
 const Image = styled.div`
@@ -139,19 +143,34 @@ const TigerPursuitsCS = () => {
   const [bannerHeight, setBannerHeight] = useState('0px');
 
   useEffect(() => {
+    const updateHeight = () => {
+
       if (imageRef.current && containerRef.current) {
           const height = `${imageRef.current.offsetHeight}px`;
+          const doubleHeight = `${imageRef.current.offsetHeight * 2 + 70}px`;
           const margin = `${imageRef.current.offsetHeight - 168}px`;
-          containerRef.current.style.height = height;
+          containerRef.current.style.height = window.innerWidth <= 700 ? doubleHeight : height;
           setBannerHeight(margin);
       }
-  }, [])
+          
+    }
+
+    updateHeight();
+    window.addEventListener('resize', updateHeight)
+
+
+    return () => {
+      window.removeEventListener('resize', updateHeight);
+    }
+
+      
+  }, [imageRef, containerRef])
 
   return (
     <Wrapper>
       <BannerContainer ref={containerRef}>
         <img ref={imageRef} src={TigerBanner} alt="Banner"/>
-        <BannerText>
+        <BannerText topMargin={`${parseInt(bannerHeight, 10) + 168}px`}>
           <h1>TigerPursuits</h1>
           <p>A web app enhancing transparency in student extracurriculars exploration for ENT200.</p>
           <a href="https://www.figma.com/proto/EwYeKsMKKAS0qcQWgoERm9/TigerPursuits-Prototype?type=design&node-id=573-1443&t=AJRNQTH9l11rCZbM-1&scaling=scale-down&page-id=492%3A172&starting-point-node-id=573%3A1443"><Button width="180px" text="View Prototype →"/></a>

@@ -10,11 +10,23 @@ const BannerContainer = styled.div`
     z-index: 0;
     overflow: hidden;
 
+    @media (max-width: 700px) {
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        height: auto;
+    }
+
+
     img {
         display: block;
         width: 100%;
         height: auto;
         position: absolute;
+
+        @media (max-width: 700px) {
+            object-fit: cover;
+        }
     }
 `;
 

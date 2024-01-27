@@ -23,7 +23,7 @@ const DisplayContainer = styled.div`
     gap: 20px;
     
     @media (min-width: 701px) {
-      ${props => !props.reverese && `
+      ${props => !props.reverse && `
       padding-left: 50px;
     `}
     }

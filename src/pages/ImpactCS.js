@@ -139,24 +139,39 @@ const ImpactCS = () => {
     const imageRef = useRef(null);
     const containerRef = useRef(null);
     
-
+  
     const [bannerHeight, setBannerHeight] = useState('0px');
-
+  
     useEffect(() => {
+      const updateHeight = () => {
+  
         if (imageRef.current && containerRef.current) {
             const height = `${imageRef.current.offsetHeight}px`;
+            const doubleHeight = `${imageRef.current.offsetHeight * 2 + 70}px`;
             const margin = `${imageRef.current.offsetHeight - 168}px`;
-            containerRef.current.style.height = height;
+            containerRef.current.style.height = window.innerWidth <= 700 ? doubleHeight : height;
             setBannerHeight(margin);
         }
-    }, [])
+            
+      }
+  
+      updateHeight();
+      window.addEventListener('resize', updateHeight)
+  
+  
+      return () => {
+        window.removeEventListener('resize', updateHeight);
+      }
+  
+        
+    }, [imageRef, containerRef])
 
 
   return (
     <Wrapper>
         <BannerContainer ref={containerRef}>
             <img ref={imageRef} src={ImpactBanner} alt="Banner"/>
-            <BannerText>
+            <BannerText topMargin={`${parseInt(bannerHeight, 10) + 168}px`}>
                 <h1>The Impact Agenda</h1>
                 <p>A website concept showcasing the content of a student founded social impact career podcast.</p>
                 <a href="https://www.figma.com/proto/yD29W2hN77ElmBjWRsWCOa/The-Impact-Agenda-Podcast?type=design&node-id=111-319&t=yXQvaSav2gpHfioy-1&scaling=scale-down&page-id=14%3A2&starting-point-node-id=111%3A319"><Button width="180px" text="View Prototype →"/></a>

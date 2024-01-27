@@ -38,6 +38,10 @@ const BannerText = styled.div`
 
         line-height: clamp(24px, 1.8vw, 24px);
     }
+
+    @media (max-width: 700px) {
+        margin-top: ${props => props.topMargin || '0'};
+    }
 `
 
 export default BannerText;
